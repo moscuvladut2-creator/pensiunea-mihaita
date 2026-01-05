@@ -3,57 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pensiunea Mihăiță - Târgu Ocna</title>
+    <title>Pensiunea Mihăiță | Târgu Ocna - Confort și Tradiție</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">Pensiunea Mihăiță</div>
-            <ul>
+    <nav id="navbar">
+        <div class="container nav-container">
+            <div class="logo">Pensiunea <span>Mihăiță</span></div>
+            <ul class="nav-links">
                 <li><a href="#acasa">Acasă</a></li>
-                <li><a href="#despre">Despre</a></li>
+                <li><a href="#facilitati">Facilități</a></li>
                 <li><a href="#galerie">Galerie</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+
+    <header id="acasa" class="hero-pro">
+        <div class="hero-overlay">
+            <div class="hero-text">
+                <span class="subtitle">Experiență de neuitat în Târgu Ocna</span>
+                <h1>Rafinament și Relaxare</h1>
+                <p>Descoperă ospitalitatea moldovenească într-un cadru modern.</p>
+                <div class="hero-btns">
+                    <a href="#galerie" class="btn-primary">Vezi Camerele</a>
+                    <a href="tel:0700000000" class="btn-secondary">Sună Acum</a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <section id="acasa" class="hero">
-        <div class="hero-content">
-            <h1>Bun venit la Pensiunea Mihăiță</h1>
-            <p>Liniște și confort în inima orașului Târgu Ocna</p>
-            <a href="#contact" class="btn">Rezervă Acum</a>
+    <section id="facilitati" class="container">
+        <div class="section-title">
+            <h2>De ce să ne alegi?</h2>
+            <div class="line"></div>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-wifi"></i>
+                <h3>Wi-Fi Gratuit</h3>
+                <p>Conexiune de mare viteză în toate spațiile.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-coffee"></i>
+                <h3>Bucătărie Utilată</h3>
+                <p>Acces complet pentru a-ți pregăti mesele preferate.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-parking"></i>
+                <h3>Parcare Privată</h3>
+                <p>Siguranță pentru mașina ta, fără costuri extra.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-leaf"></i>
+                <h3>Grădină și Foișor</h3>
+                <p>Grătar în aer liber și spațiu de relaxare.</p>
+            </div>
         </div>
     </section>
 
-    <section id="despre">
-        <h2>Despre Noi</h2>
-        <p>Situată într-o zonă liniștită din Târgu Ocna, pensiunea noastră vă oferă mediul ideal pentru relaxare, aproape de Salina Târgu Ocna și de principalele puncte de atracție.</p>
-    </section>
-
-    <section id="galerie">
-        <h2>Galerie Foto</h2>
-        <div class="grid-galerie">
-            <div class="foto-item"><img src="exterior.jpg" alt="Exterior Pensiune"></div>
-            <div class="foto-item"><img src="camera1.jpg" alt="Cameră dublă"></div>
-            <div class="foto-item"><img src="bucatarie.jpg" alt="Bucătărie complet echipată"></div>
-            <div class="foto-item"><img src="curte.jpg" alt="Curte și grătar"></div>
+    <section id="galerie" class="gallery-section">
+        <div class="section-title">
+            <h2>Galerie Foto</h2>
+        </div>
+        <div class="gallery-wrapper">
+            <div class="img-box"><img src="exterior.jpg" alt="Pensiune"></div>
+            <div class="img-box"><img src="camera1.jpg" alt="Camera"></div>
+            <div class="img-box"><img src="bucatarie.jpg" alt="Bucatarie"></div>
+            <div class="img-box"><img src="curte.jpg" alt="Curte"></div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <p>📍 Adresa: Târgu Ocna, Jud. Bacău</p>
-            <p>📞 Telefon: [Adaugă Număr]</p>
-            <p>📧 Email: contact@pensiuneamihaita.ro</p>
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>Contactează-ne</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Strada Principală, Târgu Ocna</p>
+                <p><i class="fas fa-phone"></i> +40 7xx xxx xxx</p>
+                <p><i class="fas fa-envelope"></i> contact@pensiuneamihaita.ro</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Pensiunea Mihăiță Târgu Ocna. Toate drepturile rezervate.</p>
     </footer>
 
 </body>
