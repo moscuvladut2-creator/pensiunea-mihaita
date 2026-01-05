@@ -98,3 +98,42 @@ footer { background: var(--dark); color: #ccc; padding: 60px 0; margin-top: 60px
         border-radius: 50%;
     }
 }
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-top: 30px;
+}
+
+.contact-info-box {
+    text-align: left;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.contact-info-box p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.contact-info-box i {
+    color: var(--primary);
+    margin-right: 10px;
+}
+
+.map-container {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Adaptare pentru mobil */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
