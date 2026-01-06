@@ -137,3 +137,52 @@ footer { background: var(--dark); color: #ccc; padding: 60px 0; margin-top: 60px
         grid-template-columns: 1fr;
     }
 }
+
+/* Stiluri Atracții Turistice */
+.atractii-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.atractie-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.atractie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.atractie-img {
+    height: 200px;
+    overflow: hidden;
+}
+
+.atractie-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.atractie-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.atractie-info h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+.atractie-info p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+}
